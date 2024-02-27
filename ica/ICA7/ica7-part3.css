@@ -1,0 +1,46 @@
+#narrowScreen{
+    padding: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    #narrowScreen {background: purple;}
+  }
+  
+
+  @media only screen and (min-width: 599px) {
+    #narrowScreen {background: green;}
+  } 
+
+#wideScreen{
+    padding: 20px;
+  }
+  @media only screen and (max-width: 800px) {
+    #wideScreen {background: red;}
+  }
+  
+ 
+  @media only screen and (min-width: 799px) {
+    #wideScreen {background: lightblue;}
+
+}
+#shortScreen{
+    padding: 20px;
+    background-color: turquoise;
+}
+
+@media only screen and (max-height: 600px) {
+ #shortScreen {
+    background-color: yellow;
+  }
+
+}
+#tallScreen{
+    background-color: orange;
+    padding: 20px;
+}
+@media only screen and (max-height: 800px) {
+    #tallScreen {
+       background-color: lavender;
+     }
+   
+}
+

@@ -5,7 +5,7 @@ body{
     width: 25vw;
     height: 20vh;
     background-color: indianred;
-    transition: width 5s, height 5s, background-color 1s;
+    transition: width 1s, height 1s, background-color 1s;
         
 }
 
@@ -21,7 +21,7 @@ body{
     background-color: orangered;
     animation-name: box2move; 
     animation-duration: 4s;
-   animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 @keyframes box2move{

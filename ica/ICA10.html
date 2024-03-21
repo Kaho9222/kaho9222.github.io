@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="week10.js"></script>
+    <link rel="stylesheet" href="ica10.css">
 </head>
 <body>
-
-    <h1>This is Something</h1>
-    <button type="buttont"> Press me!</button>
-
     
+    <button>Click me</button>
+    <button onclick="changeColor()">Change the background color!</button>
 
     <script>
-        const button= document.querySelector("button");
-        button.addEventListener('click',changeText);
+    const button = document.querySelector("button");
 
-        const heading=document.querySelector("h1")
+    function alertButton() {
+        alert('Hi, thanks for coming to this website, if youd like to change the color press the button below');
+    }
 
-        function changeText(){
-            const head=
-            heading.textContent=`hi`;
-        }
+
+    button.addEventListener("click", alertButton, false);
+
+    function changeColor() {
+    document.body.style.backgroundColor = "lightblue", "pink";
+}
 
     </script>
 </body>

@@ -1,0 +1,47 @@
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: orange;
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+  background-color: beige;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-color: rgba(0,0,0,0);
+}
+
+button {
+  color: orange;
+  font-family: 'Times New Roman', Times, serif;
+  border: 0;
+  background: white;
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid beige;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+}

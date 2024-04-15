@@ -1,6 +1,6 @@
 const btn= document.querySelector("#js-dog-button");
 const image=document.querySelector('#js-dog-image');
-if(image.style.height >= image.style.width) {
+if(image.style.height >= '30px') {
     image.style.height = '40opx'
     } else {
     image.style.width = '400px'
@@ -31,4 +31,4 @@ async function getDog(){
     }
 }
 
-getDog();
+//getDog();

@@ -1,0 +1,17 @@
+.volume-control {
+    position: fixed;
+
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+body{
+    color: black;
+}

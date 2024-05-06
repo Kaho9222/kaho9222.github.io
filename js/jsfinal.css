@@ -1,17 +1,24 @@
-.volume-control {
-    position: fixed;
-
-    background-color: yellow;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-button {
-    font-size: 20px;
-    padding: 5px 10px;
-    margin: 0 5px;
-}
-
 body{
-    color: black;
+    background-color: blue;
+}
+
+#volume-control {
+    width: 400px;
+    height: 40px; 
+    background-image: linear-gradient(to right, #8f3fc5, #ff00ff);
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#volume-display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
 }

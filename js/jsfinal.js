@@ -1,21 +1,18 @@
-const decreaseVolumeButton = document.getElementById('decrease-volume');
-const increaseVolumeButton = document.getElementById('increase-volume');
+const volumeControl = document.getElementById('volume-control');
 const volumeDisplay = document.getElementById('volume-display');
 
-let volume = 50; 
-
-decreaseVolumeButton.addEventListener('click', () => {
-    volume = Math.max(0, volume - 1); 
-    updateVolumeDisplay();
+volumeControl.addEventListener('mousemove', (event) => {
+    const volumePercentage = calculateVolume(event.clientX, event.clientY);
+    updateVolumeDisplay(volumePercentage);
 });
 
-increaseVolumeButton.addEventListener('click', () => {
-    volume = Math.min(100, volume + 1); 
-    updateVolumeDisplay();
-});
+function calculateVolume(x, y) {
+    const volumeControlRect = volumeControl.getBoundingClientRect();
+    const volumeX = (x - volumeControlRect.left) / volumeControlRect.width;
+    const volumePercentage = Math.min(100, Math.max(0, volumeX * 100));
+    return volumePercentage;
+}
 
-function updateVolumeDisplay() {
-    volumeDisplay.textContent = `Volume: ${volume}%`;
-    console.log(`Volume set to: ${volume}`);
-
+function updateVolumeDisplay(volumePercentage) {
+    volumeDisplay.textContent = `Volume: ${Math.round(volumePercentage)}%`;
 }
